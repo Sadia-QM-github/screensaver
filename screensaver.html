@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Screensaver | Just testing out a screensaver</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="Screensaver" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Just testing out a screensaver" />
+<meta property="og:description" content="Just testing out a screensaver" />
+<link rel="canonical" href="http://localhost:4000/screensaver/" />
+<meta property="og:url" content="http://localhost:4000/screensaver/" />
+<meta property="og:site_name" content="Screensaver" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Screensaver" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"Just testing out a screensaver","headline":"Screensaver","name":"Screensaver","url":"http://localhost:4000/screensaver/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- <link rel="stylesheet" href="/screensaver/assets/css/screensaver-style.css?v=fe18e55280488d70eb6b4c3a6351bbb1ba47db49"> -->
+    <link rel="stylesheet" href="/screensaver/assets/css/screensaver-style.css">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/screensaver/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="imageContainer">
+        <img class="screensaverImg" src="https://qatarmuseumsstorageprd.blob.core.windows.net/media/images/mia-object-SI.5-11.47dbcb32.fill-1900x1069.jpg">
+        <div class="desc">
+            <p>Astrolabe Signed by Hamid ibn al-Khidr al-Khujandi (d. 390 AH / 1000 CE). Iran or Iraq, Rayy or Baghdad Buyid period, dated 374 AH / 984-985 CE. Cast and engraved brass with black compound. SI.5.1999</p>
+        </div>
+        <div class="timecard">
+            <p id="time"></p>
+            <p id="date"></p>
+        </div>
+    </div>
+
+    <!-- javascript to get current date and time -->
+    <script>
+        // Get current date and time
+        var now = new Date();
+        var time = now.getHours() + ":" + now.getMinutes();
+
+        let monthsList = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Aug', 'Oct', 'Nov', 'Dec'];
+        var date = now.getDate() + " " + monthsList[now.getMonth()] + " " + now.getFullYear();
+        // var formattedTime = datetime.
+      
+        // Insert date and time into HTML
+        document.getElementById("time").innerHTML = time.toString();
+        document.getElementById("date").innerHTML = date.toString();
+      </script>
+  </body>
+</html>

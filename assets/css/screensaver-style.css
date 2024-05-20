@@ -1,0 +1,57 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.imageContainer {
+    position: relative;
+    width: 100vw;
+    /* Full viewport width */
+    height: 100vh;
+    /* Full viewport height */
+    overflow: hidden;
+    /* Hide any overflow */
+}
+
+/* this ensures that the image is always centered */
+.screensaverImg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*display a description box on bottom*/
+.desc {
+    background-color: rgba(19, 18, 18, 0.7);
+    border-radius: 15px;
+    position: absolute;
+    margin: 1rem 1rem 1rem 1rem;
+    bottom: 3%
+}
+
+.desc p{
+    padding: 0.5rem 1rem;
+    color: white;
+}
+
+/*display a time box on top*/
+.timecard {
+    background-color: rgba(19, 18, 18, 0.7);
+    border-radius: 15px;
+    margin: 1rem 1rem 1rem 1rem;
+    top: 3%;
+    right: 3%;
+    position: absolute;
+}
+
+.timecard p{
+    padding: 0.5rem 1rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items at the top */
+}
