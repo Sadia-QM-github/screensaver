@@ -22,8 +22,8 @@ title: Screensaver
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Just testing out a screensaver
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://sadia-qm-github.github.io/screensaver/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/screensaver" # the subpath of your site, e.g. /blog
+url: "https://sadia-qm-github.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username:  
 
@@ -32,6 +32,7 @@ github_username:
 #remote_theme: pages-themes/cayman@v0.2.0
 #plugins:
    # - jekyll-remote-theme
+   #theme: cayman does not work
 theme: jekyll-theme-cayman
 #plugins:
 # - jekyll-feed
